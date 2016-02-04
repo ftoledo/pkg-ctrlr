@@ -1,0 +1,4 @@
+version=3
+
+https://github.com/RomanKubiak/ctrlr/releases .*?(\d\S*)\.tar\.bz2
+https://github.com/RomanKubiak/ctrlr/releases /RomanKubiak/ctrlr/archive/(.+)\.tar\.gz
