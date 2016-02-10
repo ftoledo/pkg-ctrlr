@@ -12,7 +12,7 @@ Homepage: https://github.com/RomanKubiak/ctrlr
 Vcs-Git: https://github.com/ftoledo/pkg-ctrlr.git
 Vcs-Browser: https://github.com/ftoledo/pkg-ctrlr
 Package: ctrlr
-Architecture: i385 amd64
+Architecture: i386 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Control any MIDI enabled hardware
  Control any MIDI enabled hardware: synthesizers, drum machines, samplers,
