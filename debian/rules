@@ -23,11 +23,11 @@ export TEMPLATE_H="Source/Core/CtrlrRevision.template"
 
 
 %:
-	dh $@
+	dh $@ --parallel
 
 override_dh_auto_configure:
 	cd Boost ; unzip boost.zip
 	sed -e "s/%REVISION%/$(VERSION)/g" -e "s/%REVISION_DATE%/$(DATE)/g" $(TEMPLATE_H) > $(REVISION_H)
 
 override_dh_auto_build:
-	dh_auto_build --sourcedirectory=Builds/Generated/Linux/Standalone
+	dh_auto_build --parallel --sourcedirectory=Builds/Generated/Linux/Standalone

@@ -3,12 +3,14 @@ Section: utils
 Priority: extra
 Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
 Build-Depends: debhelper (>= 8.0.0), dpkg (>= 1.0), unzip,
- libgl1-mesa-dev, binutils-dev, zlib1g-dev, libgl1-mesa-dev, libasound2-dev
+ libgl1-mesa-dev, binutils-dev, zlib1g-dev, libgl1-mesa-dev, libasound2-dev,
+ libqt4-dev, libfreetype6-dev, libxinerama-dev, libxrender-dev,
+ xserver-xorg-dev, libxrender-dev, libxcursor-dev, libxcomposite-dev
+
 Standards-Version: 3.9.6
 Homepage: https://github.com/RomanKubiak/ctrlr
 Vcs-Git: https://github.com/ftoledo/pkg-ctrlr.git
 Vcs-Browser: https://github.com/ftoledo/pkg-ctrlr
-
 Package: ctrlr
 Architecture: i385 amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
